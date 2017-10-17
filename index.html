@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:title" content="#taspol Live">
+        <meta property="og:description" content="Tasmanian Parliament live stream.">
+        <meta property="og:image" content="http://taspol.live/img/thumbnail.jpg">
+        <meta property="og:url" content="http://taspol.live">
+        <meta name="twitter:card" content="summary_large_image">        
+
+        <title>#taspol 🔴Live</title>
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://vjs.zencdn.net/5.8.8/video-js.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://unpkg.com/video.js/dist/video.js"></script>
+        <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4 live"><a href="https://twitter.com/search?f=tweets&vertical=default&q=taspol" target="_blank">#taspol</a> <span>Live</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Legislative Council Live Stream
+                        </div>
+                        <div class="card-body">
+                            <video class="video-js vjs-default-skin" id="upper-house-player">
+                                <source type="application/x-mpegURL" src="http://202.7.15.203:1935/LC/legco_240p/playlist.m3u8">
+                                <p class="vjs-no-js">
+                                    To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>.
+                                </p>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            House of Assembly Live Stream
+                        </div>
+                        <div class="card-body">
+                            <video class="video-js vjs-default-skin" id="lower-house-player">
+                                <source type="application/x-mpegURL" src="http://202.7.15.203:1935/HA/house_240p/playlist.m3u8">
+                                <p class="vjs-no-js">
+                                    To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>.
+                                </p>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <script>
+            var upperHousePlayer = videojs('upper-house-player', {
+                controls: true,
+                fluid: true
+            });
+
+            var lowerHousePlayer = videojs('lower-house-player', {
+                controls: true,
+                fluid: true
+            });
+        </script>
+    </body>
+</html>
