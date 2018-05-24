@@ -94,6 +94,10 @@ smaller disconnected loaded time ranges */
     display: none;
 }
 
+iframe.vjs-resize-manager {
+	border: none;
+}
+
 .col-md-6 {
     margin-bottom: 25px;
 }
@@ -116,6 +120,10 @@ smaller disconnected loaded time ranges */
     margin-left: .3em;
 }
 
+br.opposite {
+	display: none;
+}
+
 @media (max-width: 768px) {
     .live {
         font-size: 2.5rem;
@@ -123,5 +131,9 @@ smaller disconnected loaded time ranges */
 
     br {
         display: none;
+    }
+    
+    br.opposite {
+	    display: block;
     }
 }
