@@ -90,50 +90,38 @@ smaller disconnected loaded time ranges */
     background: rgba(84, 84, 84, 0.75);
 }
 
+.video-js .vjs-volume-control {
+    display: none;
+}
+
 .col-md-6 {
     margin-bottom: 25px;
 }
 
 .live {
-    padding: 1.111em 0;
     text-align: center;
 }
 
 .live a {
-    color: #000;
+    color: #fff;
 }
 
 .live span {
-    padding: 0.139em 0.417em;
+    padding: 0.1em 0.2em;
     background-color: #FF0000;
     color: #fff;
     border-radius: 0.139em;
-    padding-left: 1.111em;
     position: relative;
     font-weight: 500;
-}
-
-.live span:after {
-    content: '';
-    width: 0.417em;
-    height: 0.417em;
-    background-color: #fff;
-    position: absolute;
-    left: 0.347em;
-    margin-top: -0.208em;
-    top: 50%;
-    border-radius: 0.208em;
-    animation: flash 2s infinite;
-}
-
-@keyframes flash {
-    0%   { opacity: 0.3; }
-    50%  { opacity: 1.0; }
-    100% { opacity: 0.3; }
+    margin-left: .3em;
 }
 
 @media (max-width: 768px) {
     .live {
         font-size: 2.5rem;
+    }
+
+    br {
+        display: none;
     }
 }

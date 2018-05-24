@@ -4,26 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta property="og:title" content="#taspol Live">
+        <meta property="og:title" content="TasPol Live">
         <meta property="og:description" content="Tasmanian Parliament live stream.">
         <meta property="og:image" content="http://taspol.live/img/thumbnail.jpg">
         <meta property="og:url" content="http://taspol.live">
         <meta name="twitter:card" content="summary_large_image">        
 
-        <title>#taspol 🔴Live</title>
+        <title>TasPol Live</title>
 
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://vjs.zencdn.net/5.8.8/video-js.css">
-        <link rel="stylesheet" href="style.css">
-
-        <script src="https://unpkg.com/video.js/dist/video.js"></script>
-        <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.darkly.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1 class="display-4 live"><a href="https://twitter.com/search?f=tweets&vertical=default&q=taspol" target="_blank">#taspol</a> <span>Live</span></h1>
+                <div class="col text-center">
+                    <h1 class="display-4 live mt-5 mb-4">TasPol<span>Live</span></h1>
+                    <h2 class="text-muted mb-2">Tasmanian Parliament live stream</h2>
+                    <p class="mb-4">Unofficial cross-browser player for the Tasmanian Parliament live stream,<br>the official parliamentary website is available at <a class="text-info" href="http://www.parliament.tas.gov.au/">http://www.parliament.tas.gov.au/</a></p>
                 </div>
             </div>
             <div class="row">
@@ -58,7 +57,15 @@
                     </div>
                 </div>
             </div>
-         </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a class="github-button" href="https://github.com/owenandrews/taspol.live" data-size="large" aria-label="TasPol.live on GitHub">TasPol.live on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/video.js/dist/video.js"></script>
+        <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
         <script>
             var upperHousePlayer = videojs('upper-house-player', {
                 controls: true,
